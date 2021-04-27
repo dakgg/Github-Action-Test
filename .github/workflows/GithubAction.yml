@@ -25,4 +25,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: build
+      - run: |
+          echo ----> android build start
+          C:\Program Files\Unity\Hub\Editor\2020.2.5f1\Editor \
+          -quit \
+          -batchmode \
+          -projectPath "Github-Action-Test" \
+          -executeMethod "BuildStart" \
+          -buildTarget Android
+
+        
 
