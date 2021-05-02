@@ -26,12 +26,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          
       - name: build
         run: |
-          "C:\Program Files\Unity\Hub\Editor\2020.2.5f1\Editor\Unity.exe" -projectPath "C:\actions-runner\_work\Github-Action-Test\Github-Action-Test" -batchmode -nographics -executeMethod Builder.BuildStart -buildTarget Android -quit
+          pwd
 
