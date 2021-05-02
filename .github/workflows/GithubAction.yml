@@ -28,6 +28,5 @@ jobs:
       
       - name: build
         run: |
-          pwd
-          ./Build.sh
+          .\Build.sh
 
