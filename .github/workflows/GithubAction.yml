@@ -33,5 +33,5 @@ jobs:
           
       - name: build
         run: |
-          "C:\Program Files\Unity\Hub\Editor\2020.2.5f1\Editor\Unity.exe" -batchmode -projectPath "C:\actions-runner\_work\Github-Action-Test\Github-Action-Test" -executeMethod "Builder.BuildStart" -buildTarget Android -quit
+          "C:\Program Files\Unity\Hub\Editor\2020.2.5f1\Editor\Unity.exe" -projectPath "C:\actions-runner\_work\Github-Action-Test\Github-Action-Test" -batchmode -nographics -executeMethod Builder.BuildStart -buildTarget Android -quit
 
